@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://dalgom-boop.github.io/my-investment-type/sitemap.xml
