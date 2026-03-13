@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://my-investment-type.netlify.app/sitemap.xml
+Sitemap: https://dalgom-boop.github.io/my-investment-type/sitemap.xml
