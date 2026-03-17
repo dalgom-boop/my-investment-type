@@ -11,7 +11,7 @@
 <meta name="robots" content="index, follow">
 <meta name="google-site-verification" content="lo5K-ZMLcBUInJPS_7KCBPU-6COG9k5iQYJtSjM2pPg">
 <meta name="author" content="월급쟁이부자들">
-<link rel="canonical" href="https://my-stock-investment-type.netlify.app/">
+<link rel="canonical" id="canonical-tag" href="https://my-stock-investment-type.netlify.app/">
 
 <!-- ═══ Open Graph (카카오·SNS 공유 미리보기) ═══ -->
 <meta property="og:type" content="website">
@@ -986,9 +986,22 @@ const QS = [
 
 
 
+const BASE_URL = 'https://my-stock-investment-type.netlify.app';
+const BASE_TITLE = '미국 주식 투자 성향 테스트 | 나와 찰떡궁합인 ETF 찾기';
+const BASE_DESC  = '나의 미국 주식 투자 성향을 분석해보세요. 공격형·안정형·모멘텀 등 6가지 투자자 유형을 기반으로 나와 가장 궁합이 좋은 ETF 종목까지 추천해 드릴게요.';
+
 const TYPES = {
   lion: {
     icon:"🦁", name:"공격형 사냥꾼", sub:"수익에 대한 확신이 강하고, 빠르게 행동하는 타입",
+    seo:{
+      title:"🦁 공격형 사냥꾼 | 미국 주식 투자 성향 테스트",
+      desc:"나는 공격형 사냥꾼 투자자! 수익에 대한 확신이 강하고 빠르게 행동하는 타입. QQQ·VGT 등 성장 ETF 포트폴리오와 맞춤 투자 전략을 확인해보세요.",
+      faq:[
+        {q:"공격형 사냥꾼 투자자에게 맞는 ETF는?",a:"QQQ(나스닥100), VGT(기술주 집중), ARKK(혁신 성장) 등 고수익·고성장 ETF가 궁합이 좋습니다. 단, 반드시 손절 원칙을 미리 정해두세요."},
+        {q:"공격형 투자자가 주의해야 할 점은?",a:"한 종목에 올인하거나 손절 기준 없이 진입하는 것이 가장 큰 위험입니다. 최소 3회 분할 매수·매도 원칙을 세우고 PEG 지표를 활용한 종목 선별 습관을 들이세요."},
+        {q:"공격형 사냥꾼 타입의 강점은?",a:"기회가 보이면 주저 없이 진입할 수 있으며, 변동성을 두려워하지 않아 상승 초기 구간에서 큰 수익을 낼 수 있습니다."}
+      ]
+    },
     desc:"엔비디아 실적 발표 전날 밤, 잠이 안 와서 새벽에 매수 버튼을 눌러본 적 있으세요? 아니면 테슬라가 하루에 10% 오르던 날, 더 갈 것 같아서 추가 매수했다가 다음 날 -8% 맞은 적이요. 빠른 결단력은 진짜 무기예요. 실제로 이 유형이 상승 초기 구간에서 가장 큰 수익을 내요. 다만 그 결단력이 손절 기준 없이 작동할 때가 문제예요. 한 번의 올인이 6개월 수익을 하루 만에 날릴 수 있거든요.",
     study:[
       {emoji:"📉", title:"분할 매수·매도를 원칙으로 만드세요", body:"한 번에 올인하는 습관은 가장 큰 위험 신호예요. 최소 3회 분할 매수, 매출 역성장 시 4회에 걸쳐 분할 매도하는 원칙을 지금 적어두세요. 원칙이 없으면 감이 결정을 내립니다."},
@@ -1030,6 +1043,15 @@ const TYPES = {
   },
   fox: {
     icon:"🦊", name:"전략형 분석가", sub:"데이터를 믿고, 확신이 생길 때만 움직이는 타입",
+    seo:{
+      title:"🦊 전략형 분석가 | 미국 주식 투자 성향 테스트",
+      desc:"나는 전략형 분석가 투자자! 데이터를 믿고 확신이 생길 때만 움직이는 타입. VOO·VTI·QQQ 조합 포트폴리오와 종목 선별 루틴을 확인해보세요.",
+      faq:[
+        {q:"전략형 분석가에게 맞는 ETF는?",a:"코어를 VOO·VTI로 안정화하고, QQQ로 성장성을 추가하는 구성이 잘 맞습니다. 샤프비율이 높은 섹터를 분기마다 확인하세요."},
+        {q:"전략형 분석가가 극복해야 할 약점은?",a:"완벽한 타이밍을 기다리다 기회를 놓치는 '분석 마비' 현상입니다. 매수 조건 3가지를 미리 정해두고 조건 충족 시 소규모라도 즉시 실행하는 규칙을 만드세요."},
+        {q:"전략형 분석가 타입의 강점은?",a:"숫자로 판단하기 때문에 감에 의존하다 고점에 잡히는 실수가 적고, 시장이 공포에 빠졌을 때도 냉정하게 기회를 찾을 수 있습니다."}
+      ]
+    },
     desc:"메타가 저점이라는 걸 알면서도 '조금만 더 빠지면 사야지' 했다가, 결국 30% 오른 뒤 뒤늦게 들어간 적 있으세요? 아니면 마이크로소프트 실적 리포트를 세 번 읽고 PER 계산도 해봤는데, 결국 매수 버튼은 못 누른 적이요. 숫자로 판단하는 능력은 진짜 강점이에요. 감에 의존하다 고점에 잡히는 실수를 잘 안 해요. 다만 완벽한 타이밍은 존재하지 않아요. 분석이 길어지는 동안 시장은 이미 움직이고 있어요.",
     study:[
       {emoji:"📈", title:"샤프비율로 섹터 고르는 법을 익히세요", body:"수익률만 보면 놓치는 게 있어요. 변동성 대비 주가 성과인 샤프비율이 높은 섹터를 우선순위에 두는 분석 루틴을 만들어보세요."},
@@ -1071,6 +1093,15 @@ const TYPES = {
   },
   elephant: {
     icon:"🐘", name:"안정형 수호자", sub:"잃지 않는 투자를 최우선으로 생각하는 타입",
+    seo:{
+      title:"🐘 안정형 수호자 | 미국 주식 투자 성향 테스트",
+      desc:"나는 안정형 수호자 투자자! 잃지 않는 투자를 최우선으로 생각하는 타입. VOO·SCHD·BND 조합 포트폴리오와 절세 전략을 확인해보세요.",
+      faq:[
+        {q:"안정형 수호자에게 맞는 ETF는?",a:"VOO 50% + SCHD 25% + BND 15% + QQQ 10% 구성이 안정성을 유지하면서 실질 수익률을 높일 수 있습니다."},
+        {q:"안정형 투자자에게 인플레이션이 위험한 이유는?",a:"인플레이션 2.9% 시대에 예적금만으로는 실질 자산이 조용히 줄어듭니다. SCHD 같은 배당 성장 ETF를 꾸준히 모으면 복리 효과로 실질 구매력을 지킬 수 있습니다."},
+        {q:"안정형 수호자 타입의 강점은?",a:"2022년 나스닥이 30% 빠지는 구간에서도 패닉 매도 없이 버틸 수 있는 심리적 안정감이 장기 투자에서 가장 중요한 능력입니다."}
+      ]
+    },
     desc:"VOO를 매달 꾸준히 모으고 있는데, 친구가 엔비디아로 3개월에 40% 벌었다는 얘기를 들으면 괜히 불안해지지 않으세요? 아니면 환율이 1,450원이라 지금 들어가면 손해 볼 것 같아서, 1,300원이 될 때까지 기다리고 있는 중이라거나요. 잃지 않으려는 원칙 덕분에 2022년 금리 인상 폭락장에서도 계좌를 지킬 수 있었을 거예요. 다만 인플레이션 2.9% 시대에는 예적금만으로 열심히 모아도 실질 자산이 조용히 줄어들고 있어요.",
     study:[
       {emoji:"🗂️", title:"ETF 고를 때 섹터 비중을 먼저 보세요", body:"ETF 이름보다 섹터 비중을 먼저 봐야 해요. 수익률·표준편차·샤프비율 3가지로 섹터를 비교하고, 변동성이 낮은 필수소비재·헬스케어·유틸리티 비중이 높은 ETF를 중심으로 구성해보세요."},
@@ -1112,6 +1143,15 @@ const TYPES = {
   },
   eagle: {
     icon:"🦅", name:"모멘텀 독수리", sub:"시장의 흐름을 빠르게 읽고, 타이밍에 올라타는 타입",
+    seo:{
+      title:"🦅 모멘텀 독수리 | 미국 주식 투자 성향 테스트",
+      desc:"나는 모멘텀 독수리 투자자! 시장 흐름을 빠르게 읽고 타이밍에 올라타는 타입. QQQ·VGT 트렌드 추종 전략과 섹터 로테이션 방법을 확인해보세요.",
+      faq:[
+        {q:"모멘텀 독수리에게 맞는 ETF는?",a:"QQQ(나스닥100)·VGT(기술주 집중)를 중심으로, 트렌드 전환 시 빠른 대응이 핵심입니다. 단기 1년 수익률이 10년 연평균보다 현저히 높으면 추세 말기 신호일 수 있어요."},
+        {q:"모멘텀 투자자가 고점 진입을 피하는 방법은?",a:"뉴스가 나올 때는 이미 시장이 선반영된 경우가 많습니다. 관심 종목 진입 전 적자 기업 제외 + 5개년 매출 성장 확인을 반드시 거치세요."},
+        {q:"모멘텀 독수리 타입의 강점은?",a:"섹터 로테이션 흐름을 읽고 자금이 어디로 이동하는지 파악해 먼저 포지션을 잡을 수 있습니다. AI·반도체 같은 초기 수혜 섹터 진입에 강합니다."}
+      ]
+    },
     desc:"AI 테마 기사 보고 팔란티어 들어갔는데 딱 그날이 고점이었던 경험 있으세요? 아니면 반도체 섹터 얘기 듣고 SOXL 샀다가, 레버리지 특성상 하루에 -15% 맞은 적이요. 시장 흐름을 가장 빠르게 읽는 유형이에요. 실제로 상승 초기에 들어가서 크게 버는 사람들이 이 유형이에요. 다만 뉴스가 나올 때는 이미 시장이 선반영된 경우가 많아요. 추세의 시작인지 끝인지를 구분하는 게 생각보다 어려워요.",
     study:[
       {emoji:"📡", title:"단기 vs 장기 수익률 격차를 확인하세요", body:"단기(1년) 수익률에서 장기(5·10년) 수익률을 뺐을 때 차이가 크면 수급이 과도하게 몰린 신호예요. 분기마다 이 격차를 확인하는 습관을 들여보세요."},
@@ -1153,6 +1193,15 @@ const TYPES = {
   },
   turtle: {
     icon:"🐢", name:"장기형 현인", sub:"시간의 복리를 믿고, 흔들리지 않고 기다리는 타입",
+    seo:{
+      title:"🐢 장기형 현인 | 미국 주식 투자 성향 테스트",
+      desc:"나는 장기형 현인 투자자! 시간의 복리를 믿고 흔들리지 않고 기다리는 타입. VOO·SCHD 장기 배당 성장 전략과 분기 점검 루틴을 확인해보세요.",
+      faq:[
+        {q:"장기형 현인에게 맞는 ETF는?",a:"워런 버핏도 추천한 VOO+SCHD 조합이 장기형에게 가장 잘 맞습니다. 정기 매수(DCA)와 연 1회 리밸런싱으로 단순하게 운용하세요."},
+        {q:"장기 투자와 묻어두기는 어떻게 다른가요?",a:"장기 투자는 투자 아이디어가 유효한지 분기마다 점검하는 것입니다. 경제적 해자(네트워크 효과·브랜드·전환 비용) 중 하나가 무너졌다면 그때가 매도 시점입니다."},
+        {q:"장기형 현인 타입의 강점은?",a:"2022년 금리 급등 폭락장에서도 팔지 않고 버텨 2023~24년 반등 수익을 온전히 챙길 수 있고, 매매 횟수가 적어 세금 부담도 낮습니다."}
+      ]
+    },
     desc:"코카콜라나 존슨앤존슨을 좋은 기업이라 샀는데, 마지막으로 실적 확인한 게 언제인지 모르시지 않으세요? 아니면 보유 종목이 왜 안 오르는지 이유를 모른 채 그냥 기다리고 있는 중이라거나요. 2022년 폭락장에서도 팔지 않고 버틴 덕분에 2023년 반등 수익을 온전히 챙길 수 있었을 거예요. 인내심은 진짜 무기예요. 다만 묻어두기와 장기 투자는 달라요. 투자 아이디어가 이미 훼손됐는데 모르고 기다리는 건 인내가 아니에요.",
     study:[
       {emoji:"🏰", title:"경제적 해자 4가지를 기준으로 기업을 골라요", body:"네트워크 효과, 비용 우위, 무형자산(브랜드·특허), 전환 비용 중 하나라도 강한 기업을 찾는 눈을 키워보세요. MOAT ETF 보유 종목을 분석해보는 것도 좋은 연습이에요."},
@@ -1194,6 +1243,15 @@ const TYPES = {
   },
   butterfly: {
     icon:"🦋", name:"탐색형 모험가", sub:"다양한 영역을 넘나드는 호기심형 투자자",
+    seo:{
+      title:"🦋 탐색형 모험가 | 미국 주식 투자 성향 테스트",
+      desc:"나는 탐색형 모험가 투자자! 다양한 영역을 넘나드는 호기심형 투자자. VTI 코어 + 관심 섹터 위성 전략과 ETF 선별 기준을 확인해보세요.",
+      faq:[
+        {q:"탐색형 모험가에게 맞는 ETF는?",a:"VTI로 전체 시장을 커버하고, 관심 섹터 ETF(기술·헬스케어·클린에너지 등)를 20~30% 추가하는 코어+위성 전략이 잘 맞습니다."},
+        {q:"탐색형 투자자가 수익률을 높이는 방법은?",a:"코어 ETF(VTI 또는 VOO) 60% 이상을 먼저 채우고 나머지 40% 이내에서 관심 테마를 실험하세요. 분산이 너무 많으면 S&P500보다 수익률이 낮아질 수 있어요."},
+        {q:"탐색형 모험가 타입의 강점은?",a:"AI·바이오·클린에너지 등 새로운 투자 트렌드를 빠르게 포착하는 눈이 있고, 한 섹터에 올인하지 않아 특정 테마 폭락에도 치명적 타격을 피할 수 있습니다."}
+      ]
+    },
     desc:"증권 앱을 열면 보유 종목이 15개가 넘고, 그중에 왜 샀는지 기억 안 나는 종목이 3개 이상 있지 않으세요? AI 테마 ETF 들어갔다가, 한 달 뒤 클린에너지가 뜬다는 기사 보고 갈아탔다가, 또 헬스케어가 주목받는다 해서 또 바꿨는데 결과적으로 S&P500보다 수익률이 낮은 경험이요. 새로운 기회를 가장 먼저 발견하는 눈이 있어요. 그게 진짜 강점이에요. 다만 코어 없는 분산은 수익을 희석시켜요. 구조가 생겨야 탐색이 전략이 돼요.",
     study:[
       {emoji:"🗺️", title:"ETF 고를 때 3가지 기준으로 비교하세요", body:"섹터 구성, 가중방식, 운용보수 이 3가지를 체계적으로 비교하는 습관이 필요해요. stockanalysis.com에서 직접 분석해보세요."},
@@ -1334,6 +1392,158 @@ function loadResult(){
   setTimeout(showResult,2800);
 }
 
+// ── SEO: URL Routing & Dynamic Meta ──────────────────────────────────
+
+function updateSeoMeta(type) {
+  const data = TYPES[type] && TYPES[type].seo ? TYPES[type].seo : null;
+  const url = data ? `${BASE_URL}/result/${type}` : `${BASE_URL}/`;
+  const title = data ? data.title : BASE_TITLE;
+  const desc  = data ? data.desc  : BASE_DESC;
+
+  document.title = title;
+  document.querySelector('meta[name="description"]').setAttribute('content', desc);
+  document.querySelector('meta[property="og:title"]').setAttribute('content', title);
+  document.querySelector('meta[property="og:description"]').setAttribute('content', desc);
+  document.querySelector('meta[property="og:url"]').setAttribute('content', url);
+  document.querySelector('meta[name="twitter:title"]').setAttribute('content', title);
+  document.querySelector('meta[name="twitter:description"]').setAttribute('content', desc);
+  document.getElementById('canonical-tag').setAttribute('href', url);
+}
+
+function injectResultFaq(type) {
+  removeResultFaq();
+  const typeData = TYPES[type];
+  if (!typeData || !typeData.seo || !typeData.seo.faq) return;
+  const items = typeData.seo.faq.map(f => ({
+    "@type": "Question",
+    "name": f.q,
+    "acceptedAnswer": {"@type": "Answer", "text": f.a}
+  }));
+  const script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.id   = 'result-faq-ld';
+  script.textContent = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": items
+  });
+  document.head.appendChild(script);
+}
+
+function removeResultFaq() {
+  const old = document.getElementById('result-faq-ld');
+  if (old) old.remove();
+}
+
+// Push URL when showing result; restore when going back
+function pushResultUrl(type) {
+  if (history.pushState) {
+    history.pushState({page: 'result', type}, '', `/result/${type}`);
+  }
+}
+
+function replaceHomeUrl() {
+  if (history.replaceState) {
+    history.replaceState({page: 'home'}, '', '/');
+  }
+}
+
+// Handle browser back/forward
+window.addEventListener('popstate', function(e) {
+  const state = e.state;
+  if (!state || state.page === 'home') {
+    const stickyCta = document.getElementById('sticky-cta');
+    if (stickyCta) stickyCta.classList.remove('visible');
+    showScreen('screen-intro');
+    updateSeoMeta(null);
+    removeResultFaq();
+  } else if (state.page === 'result' && state.type) {
+    // Re-render result without re-pushing to history
+    _renderResultForType(state.type);
+  }
+});
+
+// On page load: detect /result/[type] URL and show result directly
+document.addEventListener('DOMContentLoaded', function() {
+  const path = window.location.pathname;
+  const match = path.match(/^\/result\/([a-z]+)$/);
+  if (match && TYPES[match[1]]) {
+    const type = match[1];
+    // We need scores to be set; just render directly with type
+    _renderResultForType(type);
+  }
+});
+
+// Internal: render result for a given type key without recalculating scores
+function _renderResultForType(type) {
+  rt = TYPES[type];
+  if (!rt) return;
+
+  document.getElementById('res-icon').textContent = rt.icon;
+  document.getElementById('res-name').textContent = rt.name;
+  document.getElementById('res-sub').textContent  = rt.sub;
+  document.getElementById('res-desc').textContent = rt.desc;
+
+  const swotWrap = document.getElementById('res-swot');
+  const swotLabels = {strengths:'💪 STRENGTHS', weaknesses:'⚠️ WEAKNESSES', opportunities:'🚀 OPPORTUNITIES', threats:'🛡️ THREATS'};
+  const swotClasses = {strengths:'s', weaknesses:'w', opportunities:'o', threats:'t'};
+  swotWrap.innerHTML = `<div class="swot-grid">${
+    Object.entries(rt.swot).map(([key, items]) => `
+      <div class="swot-item ${swotClasses[key]}">
+        <div class="swot-label">${swotLabels[key]}</div>
+        <ul class="swot-list">${items.map(item => `<li>${item}</li>`).join('')}</ul>
+      </div>
+    `).join('')
+  }</div>`;
+
+  renderUsStockCard(type);
+
+  const newsCard = document.getElementById('news-card');
+  if (newsCard) newsCard.style.display = 'none';
+  const studyCard = document.getElementById('study-card');
+  if (studyCard) studyCard.style.display = 'none';
+
+  const expertWrap = document.getElementById('res-expert');
+  const questions = rt.questions || [];
+  const actionTip = rt.actionTip || '';
+  const qItemsHtml = questions.map(q =>
+    `<div class="expert-q-item"><span class="expert-q-dot">•</span><span>${q}</span></div>`
+  ).join('');
+  expertWrap.innerHTML = `
+    <div class="expert-chat-wrap">
+      <div class="expert-chat-bubble">
+        <div class="expert-chat-avatar">👨‍💼</div>
+        <div class="expert-chat-msg">
+          <div class="expert-chat-question">혹시 이런 상태 아닌가요?</div>
+          <div class="expert-q-list">${qItemsHtml}</div>
+        </div>
+      </div>
+      <div class="expert-section-divider"></div>
+      <div class="expert-action-box">
+        <div class="expert-action-label">📌 지금 시장에서 기회를 놓치지 않으려면</div>
+        <div class="expert-action-body">${actionTip}</div>
+      </div>
+    </div>
+  `;
+
+  showScreen('screen-result');
+  updateSeoMeta(type);
+  injectResultFaq(type);
+
+  setTimeout(() => {
+    const stickyCta = document.getElementById('sticky-cta');
+    if (stickyCta) stickyCta.classList.add('visible');
+  }, 1500);
+
+  const cards = document.querySelectorAll('#screen-result .res-card, #screen-result .us-card, #screen-result .form-box');
+  cards.forEach((c, i) => { c.classList.add('reveal-card'); c.style.transitionDelay = `${i * 60}ms`; });
+  const revealObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  cards.forEach(c => revealObs.observe(c));
+}
+
+// ─────────────────────────────────────────────────────────────────────
 function showResult(){
   const s = sc;
   // Normalize: max achievable per dim with new 10 questions
@@ -1382,6 +1592,7 @@ function showResult(){
     type = dimMap[dim1];
   }
   rt = TYPES[type];
+  pushResultUrl(type);
 
   // Hero
   document.getElementById('res-icon').textContent=rt.icon;
@@ -1447,6 +1658,8 @@ function showResult(){
   `;
 
   showScreen('screen-result');
+  updateSeoMeta(type);
+  injectResultFaq(type);
 
   // Sticky CTA — 결과 화면 진입 후 1.5초 뒤 노출
   setTimeout(() => {
@@ -1656,7 +1869,7 @@ window.addEventListener('load', function() {
 function shareKakao() {
   const resName = document.getElementById('res-name')?.textContent || '주식 투자자';
   const resIcon = document.getElementById('res-icon')?.textContent || '📈';
-  const pageUrl = 'https://my-stock-investment-type.netlify.app/';
+  const pageUrl = window.location.href;
 
   const shareTitle = `나는 ${resIcon} ${resName}!`;
   const shareDesc = `너는 어떤 주식 투자자야?\n테스트하고 포트폴리오 추천 받아봐 👇`;
@@ -1707,7 +1920,7 @@ function fallbackShare(title, desc, url) {
 function copyLink() {
   const resName = document.getElementById('res-name')?.textContent || '';
   const resIcon = document.getElementById('res-icon')?.textContent || '';
-  const pageUrl = 'https://my-stock-investment-type.netlify.app/';
+  const pageUrl = window.location.href;
   const text = `나는 ${resIcon} ${resName}!\n너는 어떤 주식 투자자 유형이야?\n테스트하고 포트폴리오 추천 받아봐 👇\n${pageUrl}`;
 
   if (navigator.clipboard) {
@@ -1744,6 +1957,9 @@ function restartTest(){
   const stickyCta = document.getElementById('sticky-cta');
   if(stickyCta) stickyCta.classList.remove('visible');
   showScreen('screen-intro');
+  replaceHomeUrl();
+  updateSeoMeta(null);
+  removeResultFaq();
 }
 
 function scrollToWebinar() {

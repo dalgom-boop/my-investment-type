@@ -3,9 +3,51 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://my-stock-investment-type.netlify.app/</loc>
-    <lastmod>2026-03-13</lastmod>
+    <lastmod>2026-03-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://my-stock-investment-type.netlify.app/"/>
+  </url>
+  <url>
+    <loc>https://my-stock-investment-type.netlify.app/result/lion</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://my-stock-investment-type.netlify.app/result/lion"/>
+  </url>
+  <url>
+    <loc>https://my-stock-investment-type.netlify.app/result/fox</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://my-stock-investment-type.netlify.app/result/fox"/>
+  </url>
+  <url>
+    <loc>https://my-stock-investment-type.netlify.app/result/elephant</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://my-stock-investment-type.netlify.app/result/elephant"/>
+  </url>
+  <url>
+    <loc>https://my-stock-investment-type.netlify.app/result/eagle</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://my-stock-investment-type.netlify.app/result/eagle"/>
+  </url>
+  <url>
+    <loc>https://my-stock-investment-type.netlify.app/result/turtle</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://my-stock-investment-type.netlify.app/result/turtle"/>
+  </url>
+  <url>
+    <loc>https://my-stock-investment-type.netlify.app/result/butterfly</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://my-stock-investment-type.netlify.app/result/butterfly"/>
   </url>
 </urlset>
