@@ -64,7 +64,10 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-E614CZPD17');
+  gtag('config', 'G-E614CZPD17', {
+  'page_location': window.location.href,
+  'page_referrer': document.referrer
+});
 </script>
 <style>
   :root {
