@@ -65,8 +65,11 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-E614CZPD17', {
-  'page_location': window.location.href,
-  'page_referrer': document.referrer
+  'campaign_source':   new URLSearchParams(window.location.search).get('utm_source')   || undefined,
+  'campaign_medium':   new URLSearchParams(window.location.search).get('utm_medium')   || undefined,
+  'campaign_name':     new URLSearchParams(window.location.search).get('utm_campaign') || undefined,
+  'campaign_content':  new URLSearchParams(window.location.search).get('utm_content')  || undefined,
+  'campaign_term':     new URLSearchParams(window.location.search).get('utm_term')
 });
 </script>
 <style>
